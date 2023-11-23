@@ -26,7 +26,10 @@ per eseguire il ciclo i sarà minore di 5
 */
 
 for (let i = 0; i < 5; i++) {
-  console.log(`Esercizio 1: ${i}`);
+  console.log(`
+Esercizio 1: ${i}
+
+`);
 }
 
 // ESERCIZIO 2
@@ -55,14 +58,35 @@ function addIfEven(num) {
 }
 
 console.log(`
-Esercizio 2: ${addIfEven(4)}`);
+Esercizio 2: ${addIfEven(4)}
 
-// // ESERCIZIO 3
-// function loopToFive() {
-//     for (let i = 0, i < 5, i++) {
-//         console.log(i);
-//     }
-// }
+`);
+
+// ESERCIZIO 3
+
+/* 
+function loopToFive() {
+    for (let i = 0, i < 5, i++) {
+        console.log(i);
+    }
+}
+
+3) in questa funzione un ciclo che conta fino a 5
+la sintassi e la logica sono sbagliate
+al posto delle virgole vanno i punti e virgola
+Se vogliamo contare fino a cinque il nostro contatore sarà impostato a minore uguale (<=) 
+
+*/
+
+function loopToFive() {
+  for (let i = 0; i <= 5; i++) {
+    console.log(`
+Esercizio 3: ${i}
+    
+    `);
+  }
+}
+loopToFive();
 
 // // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
 // function displayEvenNumbers() {
