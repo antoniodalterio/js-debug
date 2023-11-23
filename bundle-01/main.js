@@ -82,21 +82,48 @@ function loopToFive() {
   for (let i = 0; i <= 5; i++) {
     console.log(`
 Esercizio 3: ${i}
-    
+
     `);
   }
 }
 loopToFive();
 
-// // ESERCIZIO 4 (suggerimento: ci sono 7 errori)
-// function displayEvenNumbers() {
-//     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
-//     let evenNumbers = [];
-//     for (let i = 0; i < numbers.length - 1; i++;) {
-//         if (numbers % 2 = 0); {
-//             evenNumbers.push(i);
-//         }
-//         return evenNumbers;
-//     }
-// }
-// displayEvenNumbers(); // dovrebbe restituire [2,4,6,8]
+// ESERCIZIO 4 (suggerimento: ci sono 7 errori)
+
+/* 
+function displayEvenNumbers() {
+    let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+    let evenNumbers = [];
+    for (let i = 0; i < numbers.length - 1; i++;) {
+        if (numbers % 2 = 0); {
+            evenNumbers.push(i);
+        }
+        return evenNumbers;
+    }
+}
+displayEvenNumbers();  dovrebbe restituire [2,4,6,8]
+
+3) in questa funzione un ciclo che conta fino a alla lunghezza - dell'Array
+la sintassi è sbagliata e la condizione è sbagliata 
+!1) la nostra i deve essere uguale a 1 .
+!2) e minore uguale alla lunghezza dell'array senza il meno 1. 
+!3) togliere il punto e virgola  alla fine dell'incremento di i.
+!4) la condizione devere essere -SE numbers[i] per prendere gli elemneti in    posizione i.  
+!5) il modulo deve essere === 0.
+!6) evennumbers deve pushiare gli elementi di numbers in posizione i
+!7) il return va posto fuori al ciclo for 
+
+*/
+
+function displayEvenNumbers() {
+  let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
+  let evenNumbers = [];
+  for (let i = 1; i <= numbers.length; i++) {
+    if (numbers[i] % 2 == 0) {
+      evenNumbers.push(numbers[i]);
+    }
+  }
+  console.log(evenNumbers);
+  return evenNumbers;
+}
+displayEvenNumbers();
