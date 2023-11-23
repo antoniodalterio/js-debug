@@ -26,16 +26,36 @@ per eseguire il ciclo i sarà minore di 5
 */
 
 for (let i = 0; i < 5; i++) {
-  console.log(i);
+  console.log(`Esercizio 1: ${i}`);
 }
 
-// // ESERCIZIO 2
-// function addIfEven(num) {
-//     if (num % 2 = 0) {
-//         return num + 5;
-//     }
-//     return num;
-// }
+// ESERCIZIO 2
+
+/* 
+function addIfEven(num) {
+  if (num % 2 = 0) {
+    return num + 5;
+  }
+  return num;
+}
+
+2) in questa funzione abbiamo una condizione 
+-SE il numero modulo di 2 è 0 
+la funzione restituisce il numero sommato  a 5 
+-ALtrimenti restituisce il numero stesso 
+
+ma la sintassi è sbagliata  il nostro num deve essere (num % 2 === 0)
+
+*/
+function addIfEven(num) {
+  if (num % 2 === 0) {
+    return num + 5;
+  }
+  return num;
+}
+
+console.log(`
+Esercizio 2: ${addIfEven(4)}`);
 
 // // ESERCIZIO 3
 // function loopToFive() {
