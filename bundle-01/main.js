@@ -94,7 +94,7 @@ loopToFive();
 function displayEvenNumbers() {
     let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
     let evenNumbers = [];
-    for (let i = 0; i < numbers.length - 1; i++;) {
+    for (let i = 0; i < numbers.length - 1; i++;); {
         if (numbers % 2 = 0); {
             evenNumbers.push(i);
         }
@@ -103,10 +103,11 @@ function displayEvenNumbers() {
 }
 displayEvenNumbers();  dovrebbe restituire [2,4,6,8]
 
-3) in questa funzione un ciclo che conta fino a alla lunghezza - dell'Array
+3) la funzione restituisce solo i numeri pari
+ in questa funzione un ciclo che conta fino a alla lunghezza - dell'Array
 la sintassi è sbagliata e la condizione è sbagliata 
 !1) la nostra i deve essere uguale a 1 .
-!2) e minore uguale alla lunghezza dell'array senza il meno 1. 
+!2) punto e virgola dopo la condizione va eliminato 
 !3) togliere il punto e virgola  alla fine dell'incremento di i.
 !4) la condizione devere essere -SE numbers[i] per prendere gli elemneti in    posizione i.  
 !5) il modulo deve essere === 0.
@@ -118,7 +119,7 @@ la sintassi è sbagliata e la condizione è sbagliata
 function displayEvenNumbers() {
   let numbers = [1, 2, 3, 4, 5, 6, 7, 8];
   let evenNumbers = [];
-  for (let i = 1; i <= numbers.length; i++) {
+  for (let i = 1; i <= numbers.length - 1; i++) {
     if (numbers[i] % 2 == 0) {
       evenNumbers.push(numbers[i]);
     }
